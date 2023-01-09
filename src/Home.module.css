@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #E0E0E0;
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 10px #5a5a5a, inset -5px -5px 10px #ffffff;
+}
+
+.clock {
+    height: 200px;
+    width: 600px;
+}
+.time {
+    margin: 0 0 20px 0;
+    font-size: 2.5rem;
+}
+
+.date {
+    font-size:1.5rem;
+}
+
+.timer {
+    margin: 40px;
+}
+
+.btn {
+    padding: 20px 40px;
+    font-size: 20px;
+}
+
+.message {
+    margin-top: 16px;
+    font-size: 20px;
+}
