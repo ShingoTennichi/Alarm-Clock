@@ -1,11 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 :root {
+  --white: #f6f6f6;
+  --red-500: #ef4444;
+  --dark-blur: rgba(0, 0, 0, 0.9);
+
+  --black-100: #e7e7e7;
+  --black-200: #d1d1d1;
+  --black-300: #b0b0b0;
+  --black-400: #888888;
+  --black-500: #6d6d6d;
+  --black-600: #5d5d5d;
+  --black-700: #4f4f4f;
+  --black-800: #454545;
+  --black-900: #3d3d3d;
+  --black-950: #181818;
+
+  --blue-100: #dde7ff;
+  --blue-200: #c2d2ff;
+  --blue-300: #9db4ff;
+  --blue-400: #768aff;
+  --blue-500: #4452fe;
+  --blue-600: #3837f4;
+  --blue-700: #2f2bd7;
+  --blue-800: #2725ae;
+  --blue-900: #262789;
+  --blue-950: #17174f;
+
+  --green-100: #dafeef;
+  --green-200: #b7fbdf;
+  --green-300: #7ff6c7;
+  --green-400: #41e7a6;
+  --green-500: #18cf87;
+  --green-600: #0dac6e;
+  --green-700: #0e8758;
+  --green-800: #116a48;
+  --green-900: #10573d;
+  --green-950: #023121;
+
+  --yellow-100: #feefc7;
+  --yellow-200: #fddd8a;
+  --yellow-300: #fccb4d;
+  --yellow-400: #fbbf24;
+  --yellow-500: #f5b40b;
+  --yellow-600: #d99e06;
+  --yellow-700: #b48409;
+  --yellow-800: #926d0e;
+  --yellow-900: #785b0f;
+  --yellow-950: #453303;
+
+  --orange-50: #fffdea;
+  --orange-100: #fff6c5;
+  --orange-200: #ffee85;
+  --orange-300: #ffde46;
+  --orange-400: #ffcc1b;
+  --orange-500: #ffaa00;
+  --orange-600: #e28100;
+  --orange-700: #bb5902;
+  --orange-800: #984508;
+  --orange-900: #7c380b;
+  --orange-950: #481c00;
 }
 
-/* ----- Reset ----- */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+html,
+body {
+  font-size: 1rem;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--black-300);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body,
@@ -14,32 +89,43 @@ li,
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 p {
-    margin: 0;
-    padding: 0;
-    
+  margin: 0;
+  padding: 0;
 }
 
-img,
-picture {
-    max-width: 100%;
+h1 {
+  font-size: 3.125rem;
+  font-size: clamp(
+    3.125rem,
+    2.5892857142857144rem + 2.6785714285714284vw,
+    5rem
+  );
 }
 
-input,
-textarea,
-button,
-select {
-    font: inherit;
+h2 {
+  font-size: 3rem;
+  font-size: clamp(3rem, 2.7142857142857144rem + 1.4285714285714286vw, 4rem);
 }
 
-@media screen and (max-width: 992px) {
+h3 {
+  font-size: 2.25rem;
+  font-size: clamp(2.25rem, 2.0357142857142856rem + 1.0714285714285714vw, 3rem);
 }
 
-@media screen and (max-width: 768px) {
+h4 {
+  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 1.0357142857142856rem + 1.0714285714285714vw, 2rem);
 }
 
-@media screen and (max-width: 576px) {
+p,
+li,
+a,
+span {
+  font-size: 0.75rem;
+  font-size: clamp(
+    0.75rem,
+    0.6785714285714286rem + 0.35714285714285715vw,
+    1rem
+  );
 }

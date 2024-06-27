@@ -1,45 +1,59 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #E0E0E0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 1rem;
+  background-color: var(--green-300);
 }
 
 .frame {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 50px;
-    background: #e0e0e0;
-    box-shadow: inset 5px 5px 10px #5a5a5a, inset -5px -5px 10px #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 200px;
+  width: min(100%, 500px);
+  border-radius: 50px;
+  box-shadow: inset 5px 5px 10px var(--green-500),
+    inset -5px -5px 10px var(--green-100);
 }
 
-.clock {
-    height: 200px;
-    width: 600px;
-}
 .time {
-    margin: 0 0 20px 0;
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .date {
-    font-size:1.5rem;
+  font-size: 1.5rem;
 }
 
 .timer {
-    margin: 40px;
+  margin: 40px;
 }
 
 .btn {
-    padding: 20px 40px;
-    font-size: 20px;
+  padding: 0.5rem 2rem;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--blue-300);
+  box-shadow: 5px 5px 10px var(--blue-500), -5px -5px 10px var(--blue-100);
+}
+
+.btn:active {
+  box-shadow: inset 5px 5px 10px #5a5a5a, inset -5px -5px 10px #ffffff;
 }
 
 .message {
-    margin-top: 16px;
-    font-size: 20px;
+  font-size: 1.5rem;
+}
+
+.subscribe {
+  display: grid;
+  place-items: center;
+  gap: 20px;
+  padding: 2rem 0;
 }
